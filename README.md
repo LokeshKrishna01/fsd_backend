@@ -427,6 +427,7 @@ CORS_ORIGIN=https://your-frontend-domain.com
 - **Heroku**: Use `Procfile` with `web: node server.js`
 
 ### Live Deployment Links
+**GitHub Repository**: https://github.com/LokeshKrishna01/fsd_backend.git  
 **Backend API**: `<To be deployed>`  
 **API Documentation**: `<To be deployed>`
 
