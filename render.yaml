@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: access-revocation-backend
+    runtime: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
+      - key: JWT_EXPIRE
+        value: 7d
+      # These should be added via Render Dashboard for security
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_CODE
+        sync: false
